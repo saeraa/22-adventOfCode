@@ -4,7 +4,6 @@ function syncReadFile(filename) {
 	const contents = readFileSync(filename, "utf-8");
 	const arr = contents.split(/\n/).map((entry) => entry.split(" "));
 
-	let opponentScore = 0;
 	let playerScore = 0;
 
 	arr.forEach((round) => {
