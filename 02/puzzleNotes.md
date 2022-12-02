@@ -14,9 +14,11 @@ Since you can't be sure if the Elf is trying to help you or trick you, you shoul
 
 For example, suppose you were given the following strategy guide:
 
-> A Y
-> B X
-> C Z
+```
+A Y
+B X
+C Z
+```
 
 This strategy guide predicts and recommends the following:
 
@@ -27,7 +29,8 @@ In this example, if you were to follow the strategy guide, you would get a total
 
 What would your total score be if everything goes exactly according to your strategy guide?
 
-# --- Part Two ---
+***
+#  Part Two 
 
 The Elf finishes helping with the tent and sneaks back over to you. "Anyway, the second column says how the round needs to end: X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
 
