@@ -1,8 +1,7 @@
-const { readFileSync } = require("fs");
+const syncReadFile = require("../utils/syncReadFile.js");
 
-function syncReadFile(filename) {
-	const contents = readFileSync(filename, "utf-8");
-	const arr = contents.split(/\n/);
+function processFile(filename) {
+	const arr = syncReadFile(filename);
 	let array = [];
 
 	let longest = arr.reduce(function (a, b) {
@@ -60,4 +59,4 @@ function syncReadFile(filename) {
 	return result;
 }
 
-console.log(syncReadFile("./input.txt"));
+console.log(processFile("./input.txt"));
